@@ -1,0 +1,3 @@
+Here the result : Hello,This file is to demonstrate the fs module
+ , Hello guys.. this is to demonstrate fs  moduleHere the result : Hello,This file is to demonstrate the fs module
+ , Hello guys.. this is to demonstrate fs  module
