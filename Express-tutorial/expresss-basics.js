@@ -1,18 +1,16 @@
 const express=require('express');
-const path=require('path');
 
 const  app=express();
-
-//setup static and middleware
-app.use(express.static('./navbar app'));
-
  
-// app.get('/',(req,res)=>{
-//  res.sendFile(path.resolve(__dirname,'./navbar app/index.html'));
-// });
+app.get('/',(req,res)=>{
+    res.send("<h1>Home Page</h1>");
+});
+app.get('/about',(req,res)=>{
+   res.send("<h1>About Page</h1>");
+});
 
 app.all('/*splash',(req,res)=>{
-  res.status(404).send("<h1>Error  404</h1>");
+    res.status(404).send("<h1>Error  404 page not found</h1>");
 });
 
 app.listen(3000,()=>{
